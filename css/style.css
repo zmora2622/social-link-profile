@@ -39,9 +39,6 @@ body {
   background-color: hsl(0, 0%, 8%);
   font-family: "inter", sans-serif;
   color: hsl(0, 0%, 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 main {
