@@ -14,6 +14,9 @@
 
  &__top {
   height: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
  img {
@@ -31,10 +34,13 @@
  }
 
  &__title {
-  text-align: center;
+    display: flex;
+    justify-content: center;align-items: center;
+//   text-align: center;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.5;
+  letter-spacing: 0.5px;
  }
 
  &__description {

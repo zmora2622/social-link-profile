@@ -1,4 +1,3 @@
-@use "typography" as typo;
 @use "../util/colors" as colors;
 body {
  background-color: map-get(map-get(colors.$palette, grey), 900);
