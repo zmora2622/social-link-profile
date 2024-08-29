@@ -38,7 +38,8 @@ a {
 
 body {
   background-color: hsl(0, 0%, 8%);
-  font-family: "inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   color: hsl(0, 0%, 100%);
   display: flex;
   justify-content: center;
