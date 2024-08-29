@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html,
+body {
+ height: 100%;
+}
+
+html {
+ font-size: 62.5%;
+ scroll-behavior: smooth;
+}
+
+body {
+ min-height: 100vh;
+ font-size: 1.4rem;
+}
+
+img {
+ height: auto;
+}
+
+a {
+ text-decoration: none;
+}

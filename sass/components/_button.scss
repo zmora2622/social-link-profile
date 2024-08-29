@@ -1,0 +1,16 @@
+@use "../util/colors" as colors;
+
+.button {
+ background-color: map-get(map-get(colors.$palette, grey), 700);
+ padding: 12px;
+ border-radius: 8px;
+ text-align: center;
+ color: map-get(colors.$palette, white);
+ font-weight: 600;
+ line-height: 1.5;
+
+ &:hover {
+  background-color: map-get(colors.$palette, green);
+  color: map-get(map-get(colors.$palette, grey), 700);
+ }
+}

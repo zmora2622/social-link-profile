@@ -1,0 +1,58 @@
+@use "../util/colors" as colors;
+
+.card {
+ background-color: map-get(map-get(colors.$palette, grey), 800);
+ padding: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 24px;
+ border-radius: 12px;
+ width: 384px;
+ margin: 10px;
+
+ &__top {
+  height: 89px;
+ }
+
+ img {
+  border-radius: 100%;
+  width: 88px;
+  object-fit: cover;
+ }
+
+ &__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+ }
+
+ &__title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+ }
+
+ &__description {
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  color: map-get($map: colors.$palette, $key: green);
+ }
+
+ &__bio {
+  line-height: 1.5;
+  text-align: center;
+ }
+ &__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+ }
+}
