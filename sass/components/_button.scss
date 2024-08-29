@@ -8,7 +8,6 @@
  color: map-get(colors.$palette, white);
  font-weight: 600;
  line-height: 1.5;
- letter-spacing: 0.2px;
 
  &:hover {
   background-color: map-get(colors.$palette, green);
