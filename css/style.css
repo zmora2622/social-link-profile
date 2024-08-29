@@ -78,11 +78,9 @@ main {
   gap: 4px;
 }
 .card__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
