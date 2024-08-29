@@ -5,9 +5,9 @@ body {
  background-color: map-get(map-get(colors.$palette, grey), 900);
  font-family: typo.$font-primary;
  color: map-get(colors.$palette, white);
- //  display: flex;
- //  justify-content: center;
- //  align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 main {
