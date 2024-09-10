@@ -1,62 +1,45 @@
-@use "../util/colors" as colors;
+@use "../utils/variables" as variable;
+@use "../utils/functions" as function;
 
 .card {
- background-color: map-get(map-get(colors.$palette, grey), 800);
- padding: 40px;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- gap: 24px;
- border-radius: 12px;
- width: 384px;
- margin: 10px;
+ width: function.to_rem(384px);
+ //  width: 100%;
+ padding: function.to_rem(40px);
+ background-color: variable.$grey-800;
+ border-radius: function.to_rem(12px);
+}
 
- &__top {
-  height: 88px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+.card__image {
+ margin-bottom: function.to_rem(24px);
+ max-width: 88px;
+ border-radius: 100%;
+ object-fit: cover;
+}
 
- img {
-  border-radius: 100%;
-  width: 88px;
-  object-fit: cover;
- }
+.card__title {
+ font-size: function.to_rem(25px);
+ margin-bottom: 2px;
+ font-weight: 600;
+}
 
- &__header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
- }
+.card__address {
+ margin-bottom: function.to_rem(24px);
+ font-weight: 700;
+ color: variable.$green;
+}
 
- &__title {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1.5;
- }
+.card__description {
+ margin-bottom: function.to_rem(24px);
+}
 
- &__description {
-  text-align: center;
-  line-height: 1.5;
-  font-weight: 700;
-  color: map-get($map: colors.$palette, $key: green);
- }
-
- &__bio {
-  line-height: 1.5;
-  font-weight: 400;
- }
- &__links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-weight: 700;
-  width: 100%;
-  gap: 16px;
- }
+.card__links {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 100%;
+ row-gap: function.to_rem(16px);
 }
